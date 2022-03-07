@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263DFA1606E5E2D452AE8189 /* Pods_ExDecorationView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7524AF8409E8FDCE50C73D /* Pods_ExDecorationView.framework */; };
 		C61F645927D620110044C812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F645827D620110044C812 /* AppDelegate.swift */; };
 		C61F645B27D620110044C812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F645A27D620110044C812 /* SceneDelegate.swift */; };
 		C61F645D27D620110044C812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F645C27D620110044C812 /* ViewController.swift */; };
 		C61F646027D620110044C812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61F645E27D620110044C812 /* Main.storyboard */; };
 		C61F646227D620130044C812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61F646127D620130044C812 /* Assets.xcassets */; };
 		C61F646527D620130044C812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61F646327D620130044C812 /* LaunchScreen.storyboard */; };
+		C61F646F27D620640044C812 /* BackgroundDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F646E27D620640044C812 /* BackgroundDecorationView.swift */; };
+		C61F647127D620720044C812 /* MyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F647027D620720044C812 /* MyCollectionViewFlowLayout.swift */; };
+		C61F647727D620C50044C812 /* MySectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F647327D620C50044C812 /* MySectionModel.swift */; };
+		C61F647827D620C50044C812 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F647527D620C50044C812 /* TitleCell.swift */; };
+		C61F647927D620C50044C812 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F647627D620C50044C812 /* ColorCell.swift */; };
+		C61F647B27D620E80044C812 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F647A27D620E80044C812 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		096A75D052AFD863B7A79B7E /* Pods-ExDecorationView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDecorationView.debug.xcconfig"; path = "Target Support Files/Pods-ExDecorationView/Pods-ExDecorationView.debug.xcconfig"; sourceTree = "<group>"; };
+		1E68B0D242956538C5DA4754 /* Pods-ExDecorationView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDecorationView.release.xcconfig"; path = "Target Support Files/Pods-ExDecorationView/Pods-ExDecorationView.release.xcconfig"; sourceTree = "<group>"; };
+		AE7524AF8409E8FDCE50C73D /* Pods_ExDecorationView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDecorationView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61F645527D620110044C812 /* ExDecorationView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExDecorationView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61F645827D620110044C812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C61F645A27D620110044C812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,12 @@
 		C61F646127D620130044C812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C61F646427D620130044C812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C61F646627D620130044C812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C61F646E27D620640044C812 /* BackgroundDecorationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDecorationView.swift; sourceTree = "<group>"; };
+		C61F647027D620720044C812 /* MyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		C61F647327D620C50044C812 /* MySectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySectionModel.swift; sourceTree = "<group>"; };
+		C61F647527D620C50044C812 /* TitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		C61F647627D620C50044C812 /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		C61F647A27D620E80044C812 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263DFA1606E5E2D452AE8189 /* Pods_ExDecorationView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				C61F645727D620110044C812 /* ExDecorationView */,
 				C61F645627D620110044C812 /* Products */,
+				CCFE573713CF5E3606832166 /* Pods */,
+				C72B6BBC9A20DD086B472457 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,70 @@
 		C61F645727D620110044C812 /* ExDecorationView */ = {
 			isa = PBXGroup;
 			children = (
+				C61F647427D620C50044C812 /* Cell */,
+				C61F647227D620C50044C812 /* Model */,
+				C61F646D27D620500044C812 /* Views */,
+				C61F646C27D620470044C812 /* Layouts */,
 				C61F645827D620110044C812 /* AppDelegate.swift */,
 				C61F645A27D620110044C812 /* SceneDelegate.swift */,
 				C61F645C27D620110044C812 /* ViewController.swift */,
+				C61F647A27D620E80044C812 /* UIColor+Extension.swift */,
 				C61F645E27D620110044C812 /* Main.storyboard */,
 				C61F646127D620130044C812 /* Assets.xcassets */,
 				C61F646327D620130044C812 /* LaunchScreen.storyboard */,
 				C61F646627D620130044C812 /* Info.plist */,
 			);
 			path = ExDecorationView;
+			sourceTree = "<group>";
+		};
+		C61F646C27D620470044C812 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				C61F647027D620720044C812 /* MyCollectionViewFlowLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		C61F646D27D620500044C812 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C61F646E27D620640044C812 /* BackgroundDecorationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C61F647227D620C50044C812 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C61F647327D620C50044C812 /* MySectionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C61F647427D620C50044C812 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C61F647527D620C50044C812 /* TitleCell.swift */,
+				C61F647627D620C50044C812 /* ColorCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C72B6BBC9A20DD086B472457 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE7524AF8409E8FDCE50C73D /* Pods_ExDecorationView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCFE573713CF5E3606832166 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				096A75D052AFD863B7A79B7E /* Pods-ExDecorationView.debug.xcconfig */,
+				1E68B0D242956538C5DA4754 /* Pods-ExDecorationView.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C61F646927D620130044C812 /* Build configuration list for PBXNativeTarget "ExDecorationView" */;
 			buildPhases = (
+				F7E128D03BA8B87055FF63D9 /* [CP] Check Pods Manifest.lock */,
 				C61F645127D620110044C812 /* Sources */,
 				C61F645227D620110044C812 /* Frameworks */,
 				C61F645327D620110044C812 /* Resources */,
+				7C6A048E0CBE4C77F88C3A7E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +209,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C6A048E0CBE4C77F88C3A7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExDecorationView/Pods-ExDecorationView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExDecorationView/Pods-ExDecorationView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExDecorationView/Pods-ExDecorationView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7E128D03BA8B87055FF63D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExDecorationView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C61F645127D620110044C812 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61F647127D620720044C812 /* MyCollectionViewFlowLayout.swift in Sources */,
+				C61F647927D620C50044C812 /* ColorCell.swift in Sources */,
+				C61F647827D620C50044C812 /* TitleCell.swift in Sources */,
+				C61F647B27D620E80044C812 /* UIColor+Extension.swift in Sources */,
+				C61F646F27D620640044C812 /* BackgroundDecorationView.swift in Sources */,
 				C61F645D27D620110044C812 /* ViewController.swift in Sources */,
+				C61F647727D620C50044C812 /* MySectionModel.swift in Sources */,
 				C61F645927D620110044C812 /* AppDelegate.swift in Sources */,
 				C61F645B27D620110044C812 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +408,7 @@
 		};
 		C61F646A27D620130044C812 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096A75D052AFD863B7A79B7E /* Pods-ExDecorationView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +437,7 @@
 		};
 		C61F646B27D620130044C812 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E68B0D242956538C5DA4754 /* Pods-ExDecorationView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
