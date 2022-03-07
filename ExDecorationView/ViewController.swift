@@ -10,7 +10,7 @@ import SnapKit
 import Then
 
 class ViewController: UIViewController {
-  private lazy var collectionView = UICollectionView(
+  private let collectionView = UICollectionView(
     frame: .zero,
     collectionViewLayout: UICollectionViewFlowLayout().then {
       $0.scrollDirection = .vertical
@@ -18,12 +18,8 @@ class ViewController: UIViewController {
       $0.minimumInteritemSpacing = 8.0
       $0.itemSize = CGSize(width: 50, height: 50)
       
-      // SupplementaryView
-      $0.headerReferenceSize = .init(width: 100, height: 100)
-      $0.footerReferenceSize = .init(width: 50, height: 50)
-      
       // DecorationView
-      $0.register(BackgroundDecorationView.self, forDecorationViewOfKind: BackgroundDecorationView.id)
+//      $0.register(BackgroundDecorationView.self, forDecorationViewOfKind: BackgroundDecorationView.id)
     }
   ).then {
     $0.showsVerticalScrollIndicator = false
