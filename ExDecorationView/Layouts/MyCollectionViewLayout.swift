@@ -33,11 +33,9 @@ final class MyCollectionViewLayout: UICollectionViewLayout {
   }
   override func prepare() {
     super.prepare()
-    guard
-      self.cachedAttributes.isEmpty,
-      let collectionView = self.collectionView
-    else { return }
-
+    guard let collectionView = self.collectionView else { return }
+    
+    self.cachedAttributes.removeAll()
     let columnWidth = self.contentWidth / Metric.numberOfColumns
     let xOffsetList = (0...Int(Metric.numberOfColumns))
       .map { (column) -> CGFloat in
@@ -96,17 +94,20 @@ final class MyCollectionViewLayout: UICollectionViewLayout {
   }
   
   // MARK: SupplementaryView, DecorationView
-  override func layoutAttributesForSupplementaryView(
-    ofKind elementKind: String,
-    at indexPath: IndexPath
-  ) -> UICollectionViewLayoutAttributes? {
-    super.initialLayoutAttributesForAppearingDecorationElement(ofKind: elementKind, at: indexPath)
-  }
+//  override func layoutAttributesForSupplementaryView(
+//    ofKind elementKind: String,
+//    at indexPath: IndexPath
+//  ) -> UICollectionViewLayoutAttributes? {
+//    super.initialLayoutAttributesForAppearingDecorationElement(ofKind: elementKind, at: indexPath)
+//  }
   override func layoutAttributesForDecorationView(
     ofKind elementKind: String,
     at indexPath: IndexPath
   ) -> UICollectionViewLayoutAttributes? {
     super.layoutAttributesForDecorationView(ofKind: elementKind, at: indexPath)
+    let attributes = self.cachedAttributes[indexPath.row]
+    attributes.frame = attributes.frame.insetBy(dx: -20, dy: -20)
+    return attributes
   }
   
   private func getIndexUsingBinarySearch(_ rect: CGRect, start: Int, end: Int) -> Int? {

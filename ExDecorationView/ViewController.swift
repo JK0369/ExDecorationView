@@ -10,16 +10,11 @@ import SnapKit
 import Then
 
 class ViewController: UIViewController {
-  private let collectionView = UICollectionView(
+  private lazy var collectionView = UICollectionView(
     frame: .zero,
-    collectionViewLayout: UICollectionViewFlowLayout().then {
-      $0.scrollDirection = .vertical
-      $0.minimumLineSpacing = 8.0
-      $0.minimumInteritemSpacing = 8.0
-      $0.itemSize = CGSize(width: 50, height: 50)
-      
-      // DecorationView
-//      $0.register(BackgroundDecorationView.self, forDecorationViewOfKind: BackgroundDecorationView.id)
+    collectionViewLayout: MyCollectionViewLayout().then {
+      $0.register(BackgroundDecorationView.self, forDecorationViewOfKind: BackgroundDecorationView.id)
+      $0.delegate = self
     }
   ).then {
     $0.showsVerticalScrollIndicator = false
@@ -92,5 +87,14 @@ extension ViewController: UICollectionViewDataSource {
     default:
       return UICollectionReusableView()
     }
+  }
+}
+
+extension ViewController: MyLayoutDelegate {
+  func collectionView(
+    _ collectionView: UICollectionView,
+    heightForImageAtIndexPath indexPath: IndexPath
+  ) -> CGFloat {
+    100.0
   }
 }
